@@ -1,0 +1,86 @@
+Janusz znowu coś sknocił.
+Po powrocie z interwencji podczas koronacji Bolesława Chrobrego linia czasu przestała być stabilna –
+Janusz zamiast subtelnie naprawić drobne zakłócenie,
+przypadkiem zainspirował Chrobrego do wynalezienia elektryczności na wieki przed Edisonem!
+Efekt? W 1025 roku rycerze walczą mieczami świetlnymi, a Mieszko II twierdzi, że widział UFO.
+
+Stach, wieczny teoretyk czasowy, zaraz zaproponował genialne rozwiązanie:
+„Janusz, może spróbuj wrócić do tego momentu i zamiast wyrywać się z takimi pomysłami,
+tylko pomachaj flagą Chrobrego! Kto wie, może to wystarczy?”
+Grażyna, szefowa misji, kiwała głową, mrużąc oczy.
+„Janusz, decyzja należy do ciebie, ale pamiętaj –
+jeśli znowu coś sknocisz, wracasz na miesiąc do epoki lodowcowej,
+z dietą złożoną wyłącznie z rozmrożonej wody mamutów. Podobno niezbyt orzeźwiająca.”
+
+Janusz musi przebrnąć przez serię decyzji, by na powrót ustabilizować linię czasu.
+W tej trudnej misji pomoże mu nieco przestarzały, ale wciąż funkcjonalny system MOWKiCz
+(Monitor Ostatecznego Wyrównania Krawędzi Czasu),
+który wrzuca Janusza w wybrany stabilny punkt czasu i wskazuje decyzje prowadzące do innych punktów.
+Janusz musi przemieszczać się między punktami w linii czasu i w każdym z nich podjąć decyzję,
+która prowadzi do następnego punktu.
+Każde przejście między punktami zmienia status docelowego punktu na przeciwny do statusu punktu,
+z którego Janusz przybył – stabilny zmienia się w niestabilny i odwrotnie.
+Celem jest osiągnięcie sytuacji, w której ostatni punkt w czasie –
+ten, z którego nie ma już przejścia dalej – zachowuje stabilność.
+
+MOWKiCz nie jest idealny i bywa, że stabilizacja nie jest możliwa.
+W takim przypadku Janusz może spróbować wybrać mniejsze zło:
+ugrzęznąć w pętli czasowej, to znaczy będzie krążyć między punktami bez końca, zmieniając ich status.
+Grażyna nazywa to pętlą.
+Gorsza opcja to sytuacja, w której system nie daje już żadnych szans na stabilizację,
+co oznacza nieuniknioną katastrofę temporalną.
+
+Czy Janusz może doprowadzić do stabilizacji systemu?
+Czasem sukces wydaje się niemożliwy, ale system pozwala na balansowanie na krawędzi chaosu.
+Jeśli jednak nie ma żadnej szansy na stabilność, pozostaje Januszowi czekać na najgorsze - tyradę Grażyny.
+
+Wejście:
+Na wejściu program otrzymuje liczbę naturalną t, oznaczającą liczbę testów.
+Następnie podanych jest t zestawów danych.
+Każdy zestaw składa się z trzech liczb naturalnych n, m oraz s oznaczających:
+- liczbę punktów,
+- liczbę połączeń pomiędzy nimi,
+- numer punktu, z którego rozpoczyna się naprawianie linii czasu.
+W kolejnych m liniach występują pary liczb naturalnych x i y –
+które informują, że decyzja w punkcie czasu nr x prowadzi do punktu nr y.
+Należy przyjąć, że nie pojawią się wielokrotnie te same połączenia ani pętle
+(czyli połączenia które zaczynają się i kończą w tym samym punkcie).
+Punkty numerowane są od 0.
+
+1 ≤ t ≤ 10
+1 ≤ n ≤ 100000
+0 ≤ m ≤ 2*n
+0 ≤ x,y < n
+
+Wyjście:
+Na wyjściu dla każdego testu program ma wypisać informację NIE, jeżeli nie ma możliwości, by Janusz doprowadził do stabilizacji,
+PETLA, jeżeli nie da się uzyskać stabilizacji, ale można doprowadzić do pętli
+lub TAK, jeżeli Janusz może doprowadzić do stabilizacji.
+W przypadku sukcesu należy w drugiej linii wyjścia dla danego testu wypisać numery punktów,
+które kolejno należy odwiedzić. Należy podać najkrótsze rozwiązanie.
+W przypadku ścieżek równej długości należy wybrać pierwszą leksykograficznie.
+
+Przykład:
+Wejście:
+3
+6 7 3
+0 1
+1 5
+2 0
+2 1
+3 2
+3 4
+4 0
+4 3 0
+0 1
+1 2
+2 3
+2 2 0
+0 1
+1 0
+
+Wyjście:
+TAK
+3 2 0 1 5
+NIE
+PETLA
